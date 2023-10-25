@@ -1,11 +1,12 @@
 {
 	"name": "n8n-nodes-flectra",
-	"version": "0.4.2",
+	"version": "0.5.0",
 	"description": "A node consuming the Flectra API.",
 	"keywords": [
 		"n8n",
 		"workflow",
 		"n8n-community-node-package",
+		"digital boss",
 		"szsolutions",
 		"flectra"
 	],
@@ -17,25 +18,22 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/webfondue/n8n-nodes-flectra"
+		"url": "https://github.com/szsolutions/n8n-nodes-flectra"
 	},
 	"main": "index.js",
 	"scripts": {
 		"build": "tsc && gulp build:icons",
 		"dev": "tsc --watch",
-		"format": "prettier nodes credentials --write",
-		"lint": "eslint nodes credentials package.json",
-		"lintfix": "eslint nodes credentials package.json --fix",
-		"prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+		"format": "prettier nodes --write",
+		"lint": "eslint nodes package.json",
+		"lintfix": "eslint nodes package.json --fix",
+		"prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes package.json"
 	},
 	"files": [
 		"dist"
 	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
-		"credentials": [
-			"dist/credentials/FlectraApi.credentials.js"
-		],
 		"nodes": [
 			"dist/nodes/Flectra/Flectra.node.js"
 		]
