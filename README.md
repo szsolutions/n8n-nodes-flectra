@@ -2,7 +2,10 @@
 
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
 
+
 This Flectra custom node is a fork of [n8n-node-odoo](https://github.com/digital-boss/n8n-nodes-odoo) with additional workflow arguments.
+
+[Click here to view the README of the Odoo Package](https://digital-boss.de/n8n/?packageName=n8n-nodes-odoo)
 
 # If you have n8n installed: Install custom nodes module
 
